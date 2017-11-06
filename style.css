@@ -1,28 +1,40 @@
-
-.navagation {
-display: flex;
-flex-direction: row;
-flex-flow: row-reverse;
-order:4
+.tabs nav {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
+	/*flex-flow: row-reverse;*/
 }
-.navigation nav {
-  display: flex;
+.tabs {
+	order: 4;
+	background-color: #cb9b8c;
+	font-family: 'platino', serif;
 }
 h1 {
-  font-family: platino, serif;
-  font-size: 24px;
+	font-family: 'platino', serif;
+	font-size: 34px;
 }
 .bio {
-  border-style: hidden;
-  background-color: #bfafb8;
-  display: flex;
+	border-style: hidden;
+	background-color: #ffccbc;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row-reverse;
 }
-.bio-pic {
-  margin: 50px 60px 50px 60px;
+.bio-pic img {
+	margin: 50px 40px;
+	border-radius: 60%;
+	width: 300px;
+	height: 300px;
+	opacity: 20%;
 }
 .projects {
-  background-color: #bfafb8;
+	background-color: #ffffee;
+}
+.projects-icons {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
 }
 .contact {
-    background-color: #bfafb8;
-  }
+	background-color: #cb9b8c;
+}
