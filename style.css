@@ -11,21 +11,21 @@ a {
 	font-weight: bold;
 	font-size: 22px;
 }
-
 .tabs {
-	background-color: #cb9b8c;
+	background-color: #c6c8b5;
 }
-h1 {
+h1,
+h2 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
 	padding: 10px 35px;
 }
-p {
-	padding: 10px 35px;
+h2 {
+	text-decoration: underline;
 }
 .bio {
 	border-style: hidden;
-	background-color: #ffccbc;
+	background-color: #f9fbe7;
 	display: flex;
 	justify-content: flex-start;
 	flex-direction: row;
@@ -37,15 +37,17 @@ p {
 	height: 300px;
 	opacity: 20%;
 }
+img {
+	border: 1px solid #000000;
+}
 #shopping-list,
 #trivia-game,
 #sample-3,
 #sample-4 {
-	border: 2px solid black;
 	padding: 0px 5px;
 }
 .projects {
-	background-color: #ffffee;
+	background-color: #ffffff;
 }
 .projects-icons {
 	display: flex;
@@ -53,5 +55,8 @@ p {
 	flex-direction: row;
 }
 .contact {
-	background-color: #cb9b8c;
+	background-color: #f9fbe7;
+}
+.footer {
+	background-color: #c6c8b5;
 }
