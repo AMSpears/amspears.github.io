@@ -165,6 +165,20 @@ span:hover div a {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+#shopping-list .hvrbox-text_mobile,
+#trivia-game .hvrbox-text_mobile,
+#home-finder .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+#shopping-list.active .hvrbox-text_mobile,
+#trivia-game.active .hvrbox-text_mobile,
+#home-finder.active .hvrbox-text_mobile {
+	display: block;
+}
 .social-media-tabs a {
 	color: black;
 	text-decoration: none;
