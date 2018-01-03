@@ -75,7 +75,8 @@ img {
 	flex-wrap: wrap;
 }
 #shopping-list,
-#trivia-game {
+#trivia-game,
+#home-finder {
 	padding: 20px 10px;
 }
 .projects-icons a:hover {
@@ -100,18 +101,32 @@ span:hover div a {
 	color: gray;
 	padding-left: 300px;
 }
-
 #shopping-list,
-#trivia-game {
+#shopping-list *,
+#trivia-game,
+#trivia-game *,
+#home-finder,
+#home-finder * {
 	box-sizing: border-box;
+}
+#shopping-list,
+#trivia-game,
+#home-finder {
 	position: relative;
 	display: inline-block;
 	overflow: hidden;
 	max-width: 100%;
+	height: auto;
 }
 
+#shopping-list img,
+#trivia-game img,
+#home-finder img {
+	max-width: 100%;
+}
 #shopping-list .hvrbox-layer_top,
-#trivia-game .hvrbox-layer_top2 {
+#trivia-game .hvrbox-layer_top2,
+#home-finder .hvrbox-layer_top3 {
 	opacity: 0;
 	position: absolute;
 	top: 0;
@@ -131,11 +146,14 @@ span:hover div a {
 #shopping-list:hover .hvrbox-layer_top,
 #shopping-list.active .hvrbox-layer_top,
 #trivia-game:hover .hvrbox-layer_top2,
-#trivia-game.active .hvrbox-layer_top2 {
+#trivia-game.active .hvrbox-layer_top2,
+#home-finder:hover .hvrbox-layer_top3,
+#home-finder.active .hvrbox-layer_top3 {
 	opacity: 1;
 }
 #shopping-list .hvrbox-text,
-#trivia-game .hvrbox-text2 {
+#trivia-game .hvrbox-text2,
+#home-finder .hvrbox-text3 {
 	text-align: center;
 	font-size: 16px;
 	display: inline-block;
