@@ -1,31 +1,21 @@
 /* styling words */
 
 h1 {
+	font-family: 'Work Sans', sans-serif;
 	font-size: 22px;
 	font-weight: bold;
+	font-variant: small-caps;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	padding-left: 30px;
 	padding-right: 110px;
-	font-family: 'Work Sans', sans-serif;
-	font-variant: small-caps;
 }
-.projects h2 {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	padding: 40px 10px;
+
+h2 {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: bold;
-}
-.contact h2 {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	padding: 40px 10px;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: bold;
+	font-size: 30px;
 }
 
 .bio h3 {
@@ -46,11 +36,18 @@ h4 {
 p {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 22px;
-	padding: 10px 20px;
+}
+
+.projects,
+.contact {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 }
 .hvr-text {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 8px;
+	font-size: 12px;
 }
 
 /* styling buttons */
