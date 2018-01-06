@@ -1,10 +1,4 @@
-header,
-.navs,
-.main-nav,
-.resume-nav {
-	display: flex;
-	font-family: 'Work Sans', sans-serif;
-}
+/* styling words */
 
 h1 {
 	font-size: 22px;
@@ -33,11 +27,6 @@ h1 {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: bold;
 }
-.contact {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
 
 .bio h3 {
 	font-family: 'Work Sans', sans-serif;
@@ -49,49 +38,30 @@ h1 {
 	line-height: 200%;
 	font-family: 'Work Sans', sans-serif;
 }
+h4 {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
 p {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 22px;
 	padding: 10px 20px;
 }
+.hvr-text {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 8px;
+}
 
-.bio-pic {
-	padding-top: 50px;
-}
-.bio-pic img {
-	margin: 20px 600px;
-	border-radius: 60%;
-	width: 200px;
-	height: 200px;
-}
-img {
-	border: 1px solid black;
-	max-width: 100%;
-	max-height: 100%;
-}
-.header {
-	background: url(header.png) 50% no-repeat;
-	background-size: contain;
-}
-.projects .projects-icons {
+/* styling buttons */
+
+header,
+.navs,
+.main-nav,
+.resume-nav {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
+	font-family: 'Work Sans', sans-serif;
 }
-#shopping-list,
-#trivia-game,
-#home-finder {
-	padding: 20px 10px;
-}
-.projects-icons a:hover {
-	opacity: 0.3;
-	filter: alpha(opacity=30);
-}
-span:hover div a {
-	display: block;
-}
-
 .navs a {
 	padding: 15px 80px;
 	text-decoration: none;
@@ -106,6 +76,86 @@ span:hover div a {
 	color: gray;
 	padding-left: 300px;
 }
+
+.social-media-tabs a {
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
+}
+
+a:hover {
+	color: #f7b15d;
+}
+
+/* styling page layout */
+
+body {
+	background-color: #fcf7f2;
+	cursor: crosshair;
+}
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 400px;
+	margin-right: 400px;
+	border-style: outset;
+	border-width: 1px;
+}
+footer p {
+	color: black;
+	font-family: 'Work Sans', sans-serif;
+	font-variant: small-caps;
+	text-decoration: none;
+	font-size: 14px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.bio-pic {
+	padding-top: 50px;
+}
+.bio-pic img {
+	margin: 20px 600px;
+	border-radius: 60%;
+	width: 200px;
+	height: 200px;
+}
+img {
+	border: 1px solid black;
+}
+
+.projects .projects-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.contact {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.contact-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#shopping-list,
+#trivia-game,
+#home-finder {
+	padding: 20px 10px;
+}
+#shopping-list a:hover,
+#trivia-game a:hover,
+#home-finder a:hover {
+	opacity: 1;
+}
+
+/*follow this example for words over images: http://css-workshop.com/hover-box-text-over-images-on-hover-and-more/*/
+
 #shopping-list,
 #shopping-list *,
 #trivia-game,
@@ -129,6 +179,7 @@ span:hover div a {
 #home-finder img {
 	max-width: 100%;
 }
+
 #shopping-list .hvrbox-layer_top,
 #trivia-game .hvrbox-layer_top2,
 #home-finder .hvrbox-layer_top3 {
@@ -141,17 +192,18 @@ span:hover div a {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.6);
-	color: #ffffff;
-	padding: 10px;
+	color: #fff;
+	padding: 15px;
 	-moz-transition: all 0.4s ease-in-out 0s;
 	-webkit-transition: all 0.4s ease-in-out 0s;
 	-ms-transition: all 0.4s ease-in-out 0s;
 	transition: all 0.4s ease-in-out 0s;
 }
+
 #shopping-list:hover .hvrbox-layer_top,
 #shopping-list.active .hvrbox-layer_top,
 #trivia-game:hover .hvrbox-layer_top2,
-#trivia-game.active .hvrbox-layer_top2,
+#trivia-game.active .hrvbox-layer_top2,
 #home-finder:hover .hvrbox-layer_top3,
 #home-finder.active .hvrbox-layer_top3 {
 	opacity: 1;
@@ -160,7 +212,7 @@ span:hover div a {
 #trivia-game .hvrbox-text2,
 #home-finder .hvrbox-text3 {
 	text-align: center;
-	font-size: 16px;
+	font-size: 18px;
 	display: inline-block;
 	position: absolute;
 	top: 50%;
@@ -169,47 +221,4 @@ span:hover div a {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-}
-#shopping-list .hvrbox-text_mobile,
-#trivia-game .hvrbox-text_mobile,
-#home-finder .hvrbox-text_mobile {
-	font-size: 15px;
-	border-top: 1px solid rgba(179, 179, 179, 0.7);
-	margin-top: 5px;
-	padding-top: 2px;
-	display: none;
-}
-#shopping-list.active .hvrbox-text_mobile,
-#trivia-game.active .hvrbox-text_mobile,
-#home-finder.active .hvrbox-text_mobile {
-	display: block;
-}
-.social-media-tabs a {
-	color: black;
-	text-decoration: none;
-	font-size: 20px;
-	padding-right: 30px;
-}
-a:hover {
-	color: #f7b15d;
-}
-hr {
-	display: block;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-left: 400px;
-	margin-right: 400px;
-	border-style: outset;
-	border-width: 1px;
-}
-footer p {
-	color: black;
-	font-family: 'Work Sans', sans-serif;
-	font-variant: small-caps;
-	text-decoration: none;
-	font-size: 14px;
-}
-body {
-	background-color: #fcf7f2;
-	cursor: crosshair;
 }
