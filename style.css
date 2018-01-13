@@ -20,11 +20,12 @@ h2 {
 
 .bio h3 {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 	padding-top: 10px;
-	display: flex;
+	/* display: flex; */
 	text-align: center;
-	flex-direction: column;
+	/* flex-direction: column; */
+	font-weight: 400;
 	line-height: 200%;
 	font-family: 'Work Sans', sans-serif;
 }
@@ -78,7 +79,7 @@ header,
 	color: black;
 	text-decoration: none;
 	font-size: 20px;
-	padding: 10px;
+	padding: 20px;
 }
 
 a:hover {
@@ -113,6 +114,7 @@ footer p {
 
 .bio-pic {
 	padding-top: 50px;
+	text-align: center;
 }
 .bio-pic img {
 	margin: 20px 600px;
@@ -121,7 +123,7 @@ footer p {
 	height: 200px;
 }
 img {
-	border: 1px solid black;
+	/* border: 1px solid black; */
 }
 
 .projects .projects-icons {
@@ -140,11 +142,13 @@ img {
 	flex-direction: row;
 	justify-content: center;
 }
+#food-search,
 #shopping-list,
 #trivia-game,
 #home-finder {
 	padding: 20px 10px;
 }
+#foos-search a:hover,
 #shopping-list a:hover,
 #trivia-game a:hover,
 #home-finder a:hover {
@@ -153,6 +157,8 @@ img {
 
 /*follow this example for words over images: http://css-workshop.com/hover-box-text-over-images-on-hover-and-more/*/
 
+#food-search,
+#food-search *,
 #shopping-list,
 #shopping-list *,
 #trivia-game,
@@ -161,6 +167,7 @@ img {
 #home-finder * {
 	box-sizing: border-box;
 }
+#food-search,
 #shopping-list,
 #trivia-game,
 #home-finder {
@@ -171,13 +178,15 @@ img {
 	height: auto;
 }
 
+#food-search img,
 #shopping-list img,
 #trivia-game img,
 #home-finder img {
 	max-width: 100%;
 }
 
-#shopping-list .hvrbox-layer_top,
+#food-search .hvrbox-layer_top,
+#shopping-list .hvrbox-layer_top1,
 #trivia-game .hvrbox-layer_top2,
 #home-finder .hvrbox-layer_top3 {
 	opacity: 0;
@@ -196,16 +205,18 @@ img {
 	-ms-transition: all 0.4s ease-in-out 0s;
 	transition: all 0.4s ease-in-out 0s;
 }
-
-#shopping-list:hover .hvrbox-layer_top,
-#shopping-list.active .hvrbox-layer_top,
+#food-search:hover .hvrbox-layer_top,
+#food-search.active .hvrbox-layer_top,
+#shopping-list:hover .hvrbox-layer_top1,
+#shopping-list.active .hvrbox-layer_top1,
 #trivia-game:hover .hvrbox-layer_top2,
 #trivia-game.active .hrvbox-layer_top2,
 #home-finder:hover .hvrbox-layer_top3,
 #home-finder.active .hvrbox-layer_top3 {
 	opacity: 1;
 }
-#shopping-list .hvrbox-text,
+#food-search .hvrbox-text,
+#shopping-list .hvrbox-text1,
 #trivia-game .hvrbox-text2,
 #home-finder .hvrbox-text3 {
 	text-align: center;
