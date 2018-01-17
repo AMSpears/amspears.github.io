@@ -1,42 +1,37 @@
 /* styling words */
 
-h1 {
-	font-family: 'Work Sans', sans-serif;
-	font-size: 22px;
+strong {
+	color: #ee6140;
+	font-size: 32px;
 	font-weight: bold;
-	font-variant: small-caps;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	padding-left: 30px;
-	padding-right: 110px;
 }
 
 h2 {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 35px;
 }
-
-.bio h3 {
+h3 {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 20px;
-	padding-top: 10px;
-	/* display: flex; */
-	text-align: center;
-	/* flex-direction: column; */
-	font-weight: 400;
-	line-height: 200%;
-	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
 }
-h4 {
+.body-text-1 {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	padding-top: 20px;
+	text-align: center;
+	line-height: 200%;
+}
+
+.hvr-text {
+	font-family: 'Work Sans', sans-serif;
+	font-size: 12px;
+}
+.footer-text {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 18px;
-	font-weight: bold;
-}
-p {
-	font-family: 'Work Sans', sans-serif;
-	font-size: 22px;
 }
 
 .projects,
@@ -46,33 +41,17 @@ p {
 	flex-direction: column;
 	justify-content: center;
 }
-.hvr-text {
-	font-family: 'Work Sans', sans-serif;
-	font-size: 12px;
-}
 
 /* styling buttons */
 
-header,
-.navs,
-.main-nav,
-.resume-nav {
-	display: flex;
-	font-family: 'Work Sans', sans-serif;
-}
-.navs a {
-	padding: 15px 80px;
-	text-decoration: none;
-	font-size: 18px;
-	color: black;
-}
-.main-nav a {
-	padding-left: 200px;
-	padding-right: 20px;
-}
 .resume-nav a {
 	color: gray;
-	padding-left: 300px;
+	padding-bottom: 20px;
+	text-decoration: none;
+	color: black;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 24px;
+	padding-left: 75%;
 }
 
 .social-media-tabs a {
@@ -106,24 +85,16 @@ footer p {
 	font-family: 'Work Sans', sans-serif;
 	font-variant: small-caps;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 16px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
-
-.bio-pic {
-	padding-top: 50px;
-	text-align: center;
-}
-.bio-pic img {
-	margin: 20px 600px;
-	border-radius: 60%;
-	width: 200px;
-	height: 200px;
-}
-img {
-	/* border: 1px solid black; */
+.bio {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .projects .projects-icons {
@@ -138,9 +109,10 @@ img {
 	flex-direction: column;
 }
 .contact-text {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	align-items: center;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
 }
 #food-search,
 #shopping-list,
