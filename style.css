@@ -72,6 +72,11 @@ a:hover {
 	color: #f7b15d;
 }
 
+.projects a {
+	color: white;
+	text-decoration: none;
+}
+
 /* styling page layout */
 
 body {
