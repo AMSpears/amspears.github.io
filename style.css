@@ -125,6 +125,8 @@ hr {
 #trivia-game,
 #home-finder {
 	padding: 20px 10px;
+	height: 400px;
+	overflow: ;
 }
 #foos-search a:hover,
 #shopping-list a:hover,
