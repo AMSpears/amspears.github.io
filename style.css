@@ -1,33 +1,40 @@
 /* styling words */
-
+/* header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+} */
 strong {
 	color: #ee6140;
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: bold;
 }
 
 h2 {
 	font-family: 'Work Sans', sans-serif;
 	font-weight: bold;
-	font-size: 35px;
+	font-size: 40px;
 }
 h3 {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 700;
 }
 .body-text-1 {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: 400;
-	padding-top: 20px;
+	padding-top: 26px;
+	padding-left: 20px;
+	padding-right: 20px;
 	text-align: center;
 	line-height: 200%;
 }
 
 .hvr-text {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 12px;
+	font-size: 26px;
 }
 .footer-text {
 	font-family: 'Work Sans', sans-serif;
@@ -57,7 +64,7 @@ h3 {
 .social-media-tabs a {
 	color: black;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 30px;
 	padding: 20px;
 }
 
@@ -69,7 +76,6 @@ a:hover {
 
 body {
 	background-color: #fcf7f2;
-	cursor: crosshair;
 }
 hr {
 	display: block;
@@ -80,7 +86,7 @@ hr {
 	border-style: outset;
 	border-width: 1px;
 }
-footer p {
+/* footer p {
 	color: black;
 	font-family: 'Work Sans', sans-serif;
 	font-variant: small-caps;
@@ -89,7 +95,7 @@ footer p {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-}
+} */
 .bio {
 	display: flex;
 	justify-content: center;
@@ -124,7 +130,7 @@ footer p {
 #shopping-list a:hover,
 #trivia-game a:hover,
 #home-finder a:hover {
-	opacity: 1;
+	opacity: 2;
 }
 
 /*follow this example for words over images: http://css-workshop.com/hover-box-text-over-images-on-hover-and-more/*/
