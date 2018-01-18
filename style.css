@@ -136,30 +136,9 @@ hr {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 24px;
 	font-weight: 500;
+	padding-bottom: 20px;
 }
-label {
-	font-family: 'Work Sans', sans-serif;
-	font-size: 24px;
-	font-weight: 700;
-}
-input[type='text'],
-textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #000000;
-	border-radius: 4px;
-	box-sizing: border-box;
-	resize: vertical;
-	padding-top: 30px;
-}
-input[type='submit'] {
-	padding: 10px;
-	border-radius: 6px;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	background-color: #ee6140;
-}
+
 #food-search,
 #shopping-list,
 #trivia-game,
