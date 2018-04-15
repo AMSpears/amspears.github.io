@@ -27,6 +27,7 @@ h3 {
     padding-right: 20px;
     text-align: center;
     line-height: 200%;
+    color: #484848;
 }
 
 .hvr-text {
@@ -50,10 +51,9 @@ h3 {
 /* styling buttons */
 
 .resume-nav a {
-    color: gray;
+    color: #484848;
     padding-bottom: 25px;
     text-decoration: none;
-    color: black;
     font-family: 'Work Sans', sans-serif;
     font-size: 24px;
     padding-left: 75%;
@@ -68,15 +68,6 @@ h3 {
 
 a:hover {
     color: #ff675a;
-}
-
-button {
-    border-radius: 50%;
-    padding: 10px 20px;
-    color: green;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Work Sans', sans-serif;
 }
 
 .projects a {
@@ -104,17 +95,6 @@ hr {
     border-width: 1px;
 }
 
-/* footer p {
-	color: black;
-	font-family: 'Work Sans', sans-serif;
-	font-variant: small-caps;
-	text-decoration: none;
-	font-size: 16px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-} */
-
 .bio {
     display: flex;
     justify-content: center;
@@ -136,6 +116,7 @@ hr {
 }
 
 .contact-text {
+	color: #484848;
     align-items: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 24px;
