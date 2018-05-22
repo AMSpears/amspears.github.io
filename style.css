@@ -3,7 +3,7 @@
 strong {
     color: #ff675a;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h2 {
@@ -35,9 +35,10 @@ h3 {
     font-size: 26px;
 }
 
-.footer-text {
+.hvr-link {
     font-family: 'Work Sans', sans-serif;
-    font-size: 18px;
+    font-size: 26px;
+    padding-right: 10px;
 }
 
 .projects,
@@ -88,7 +89,6 @@ a:hover {
 hr {
     display: block;
     margin-top: 0.5em;
-    margin-bottom: 0.5em;
     margin-left: 400px;
     margin-right: 400px;
     border-style: outset;
@@ -116,41 +116,33 @@ hr {
 }
 
 .contact-text {
-	color: #484848;
+    text-decoration: none;
+    color: #484848;
     align-items: center;
     font-family: 'Work Sans', sans-serif;
     font-size: 24px;
     font-weight: 500;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 #food-search,
 #shopping-list,
 #trivia-game,
 #home-finder {
-    padding: 20px 10px;
-    height: 400px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: inherit;
 }
 
-#foos-search a:hover,
+#food-search a:hover,
 #shopping-list a:hover,
 #trivia-game a:hover,
 #home-finder a:hover {
-    opacity: 2;
+    opacity: 0.6;
+    color: #ff675a;
 }
 
 /*follow this example for words over images: http://css-workshop.com/hover-box-text-over-images-on-hover-and-more/*/
-
-#food-search,
-#food-search *,
-#shopping-list,
-#shopping-list *,
-#trivia-game,
-#trivia-game *,
-#home-finder,
-#home-finder * {
-    box-sizing: border-box;
-}
 
 #food-search,
 #shopping-list,
@@ -182,9 +174,8 @@ hr {
     bottom: 0;
     width: 100%;
     height: 100%;
+    color: #f4f4f4;
     background: rgba(0, 0, 0, 0.8);
-    color: #ffffff;
-    padding: 15px;
     -moz-transition: all 0.4s ease-in-out 0s;
     -webkit-transition: all 0.4s ease-in-out 0s;
     -ms-transition: all 0.4s ease-in-out 0s;
@@ -199,7 +190,7 @@ hr {
 #trivia-game.active .hrvbox-layer_top2,
 #home-finder:hover .hvrbox-layer_top3,
 #home-finder.active .hvrbox-layer_top3 {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 #food-search .hvrbox-text,
@@ -215,4 +206,163 @@ hr {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+    strong {
+        font-size: 22px;
+    }
+    .body-text-1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    .resume-nav a {
+        font-size: 20px;
+    }
+    .hvr-text {
+        font-size: 18px;
+    }
+    .contact-text {
+        font-size: 22px;
+    }
+    .link a {
+        font-size: 20px;
+    }
+    #food-search .hvrbox-layer_top,
+    #shopping-list .hvrbox-layer_top1,
+    #trivia-game .hvrbox-layer_top2,
+    #home-finder .hvrbox-layer_top3 {
+        opacity: 0;
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+    }
+    #food-search,
+    #shopping-list,
+    #trivia-game,
+    #home-finder {
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    }
+    #food-search img,
+    #shopping-list img,
+    #trivia-game img,
+    #home-finder img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    strong {
+        font-size: 15px;
+    }
+    .body-text-1 {
+        font-size: 15px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .resume-nav a {
+        font-size: 15px;
+    }
+    .hvr-text {
+        font-size: 15px;
+    }
+    .contact-text {
+        font-size: 15px;
+    }
+    .link a {
+        font-size: 15px;
+    }
+    .hvr-link {
+        font-size: 15px;
+    }
+    #food-search .hvrbox-layer_top,
+    #shopping-list .hvrbox-layer_top1,
+    #trivia-game .hvrbox-layer_top2,
+    #home-finder .hvrbox-layer_top3 {
+        opacity: 0;
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+    }
+    #food-search,
+    #shopping-list,
+    #trivia-game,
+    #home-finder {
+        overflow: hidden;
+        max-width: 100%;
+        height: auto;
+    }
+    #food-search img,
+    #shopping-list img,
+    #trivia-game img,
+    #home-finder img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    strong {
+        font-size: 12px;
+    }
+    .body-text-1 {
+        font-size: 12px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .resume-nav a {
+        font-size: 12px;
+    }
+    .hvr-text {
+        font-size: 12px;
+    }
+    .contact-text {
+        font-size: 12px;
+    }
+    .link a {
+        font-size: 12px;
+    }
+    .hvr-link {
+        font-size: 12px;
+    }
+    #food-search .hvrbox-layer_top,
+    #shopping-list .hvrbox-layer_top1,
+    #trivia-game .hvrbox-layer_top2,
+    #home-finder .hvrbox-layer_top3 {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: auto;
+    }
+    #food-search,
+    #shopping-list,
+    #trivia-game,
+    #home-finder {
+        overflow: hidden;
+        width: 370px;
+        height: auto;
+    }
+    #food-search img,
+    #shopping-list img,
+    #trivia-game img,
+    #home-finder img {
+        width: 370px;
+        height: auto;
+    }
 }
